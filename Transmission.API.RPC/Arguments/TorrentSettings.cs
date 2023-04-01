@@ -69,7 +69,7 @@ namespace Transmission.API.RPC.Arguments
         public double? SeedRatioLimit { get { return GetValue<double?>("seedRatioLimit"); } set { this["seedRatioLimit"] = value; } }
 
         /// <summary>
-        /// Which ratio to use. 
+        /// Which ratio to use.
         /// </summary>
         public int? SeedRatioMode { get { return GetValue<int?>("seedRatioMode"); } set { this["seedRatioMode"] = value; } }
 
@@ -124,6 +124,11 @@ namespace Transmission.API.RPC.Arguments
 		/// Normal priority files
 		/// </summary>
 		public string[] PriorityNormal { get { return GetValue<string[]>("priority-normal"); } set { this["priority-normal"] = value; } }
+
+        /// <summary>
+        /// Labels
+        /// </summary>
+        public string[] Labels { get { return GetValue<string[]>("labels"); } set { this["labels"] = value; } }
 
 		//TODO: Add and test
 		//"trackerReplace"      | array      pairs of <trackerId/new announce URLs>
